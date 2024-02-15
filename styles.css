@@ -1,20 +1,62 @@
 #logoBar{
+padding-left: 1rem;
   width: 30vw;
-  height: 100vh;
+  margin:auto;
 }
 #siteLogo{
   width: 100%;
 }
 body {
   display: flex;
+  background-color: #F3E9DC;
+  font-family: "Jost";
+  color: #1C3144;
+  height: 98vh;
 }
+
+.body-flex{
+	display:flex;
+	flex-direction: row;
+	width: 98vw;
+	flex-wrap:nowrap;
+	align-items:center;
+	justify-content: center;
+}
+
 #staffGallery{
   width: 70vw;
-  display: inherit;
-
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items:center;
+	justify-content: center;
 }
 .galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
+	width: 10rem;
+	margin: auto;
+}
+
+.card{
+	background-color: #658E9C;
+	width: 14rem;
+	height: 16rem;
+	padding: 20px;
+	text-align: center;
+	border-radius: 2rem;
+}
+
+@media (width <= 600px) {
+  .body-flex{
+	flex-direction: column;
+	justify-content: start;
+  }
+  #logoBar{
+  width: 90vw;
+  text-align: center;
+  padding: 0rem;
+  
 }
